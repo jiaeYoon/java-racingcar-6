@@ -35,7 +35,7 @@ public class Racing {
     public void start() {
         int moveCount = initMoveCount();
         while (moveCount < turn) {
-            move();
+            cars.forEach(Car::move);
             printMoveResult(moveCount);
             moveCount++;
         }
@@ -44,12 +44,6 @@ public class Racing {
 
     private int initMoveCount() {
         return MOVE_COUNT_INITIAL_VALUE;
-    }
-
-    private void move() {
-        for (Car car : cars) {
-            car.move();
-        }
     }
 
     private void printMoveResult(int moveCount) {
