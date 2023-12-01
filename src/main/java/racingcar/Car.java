@@ -27,8 +27,12 @@ public class Car {
     public void move() {
         boolean goForward = goForwardOrStop();
         if (goForward) {
-            distance++;
+            forward();
         }
+    }
+
+    private void forward() {
+        distance++;
     }
 
     private boolean goForwardOrStop() {
