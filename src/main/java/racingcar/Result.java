@@ -20,6 +20,7 @@ public class Result {
             }
             if (distance > max) {
                 winnersName.clear();
+                max = distance;
             }
             winnersName.add(car.getName());
         }
