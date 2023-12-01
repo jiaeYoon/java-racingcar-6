@@ -23,18 +23,14 @@ public class Car {
     }
 
     public void move() {
-        boolean goForward = goForwardOrStop();
-        if (goForward) {
+        MovementCondition movementCondition = new MovementCondition();
+        if (movementCondition.canMovable()) {
             forward();
         }
     }
 
     private void forward() {
         distance++;
-    }
-
-    private boolean goForwardOrStop() {
-        return Util.getRandomNumber() >= RacingCarConfig.FORWARD_LOWER_LIMIT.getValue();
     }
 
     public String getName() {
