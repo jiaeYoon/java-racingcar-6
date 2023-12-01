@@ -1,6 +1,5 @@
 package racingcar.validate;
 
-import racingcar.config.RacingCarConfig;
 
 import java.util.List;
 
@@ -20,11 +19,11 @@ public class InputValidate {
     }
 
     public static void turnValidate(String input) {
-        isNotNegativeNumber(input);
+        isPositiveNumber(input);
     }
 
-    private static void isNotNegativeNumber(String input) {
-        String regex = "^[0-9]+$";
+    private static void isPositiveNumber(String input) {
+        String regex = "^([1-9]+[0-9]*)$";
         if (!input.matches(regex)) {
             throw new IllegalArgumentException();
         }
