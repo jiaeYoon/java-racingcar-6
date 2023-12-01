@@ -1,7 +1,4 @@
-package racingcar;
-
-import racingcar.config.RacingCarConfig;
-import racingcar.util.Util;
+package racingcar.domain;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,6 +1,7 @@
-package racingcar;
+package racingcar.controller;
 
-import racingcar.config.RacingCarConfig;
+import racingcar.domain.Car;
+import racingcar.validate.InputValidate;
 import racingcar.util.Util;
 import racingcar.view.InputView;
 import racingcar.view.OutputView;

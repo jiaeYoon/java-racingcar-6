@@ -1,6 +1,6 @@
 package racingcar.view;
 
-import racingcar.Car;
+import racingcar.domain.Car;
 import racingcar.Result;
 import racingcar.util.Util;
 

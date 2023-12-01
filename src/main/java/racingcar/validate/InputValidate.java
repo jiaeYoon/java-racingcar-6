@@ -1,4 +1,4 @@
-package racingcar;
+package racingcar.validate;
 
 import racingcar.config.RacingCarConfig;
 
