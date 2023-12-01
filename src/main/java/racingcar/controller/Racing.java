@@ -9,6 +9,7 @@ import racingcar.view.OutputView;
 import java.util.List;
 
 public class Racing {
+    private static final int MOVE_COUNT_INITIAL_VALUE = 0;
 
     private final List<Car> cars;
     private final int turn;
@@ -42,7 +43,7 @@ public class Racing {
     }
 
     private int initMoveCount() {
-        return RacingCarConfig.MOVE_COUNT_INITIAL_VALUE.getValue();
+        return MOVE_COUNT_INITIAL_VALUE;
     }
 
     private void move() {
@@ -52,7 +53,7 @@ public class Racing {
     }
 
     private void printMoveResult(int moveCount) {
-        if (moveCount == RacingCarConfig.MOVE_COUNT_INITIAL_VALUE.getValue()) {
+        if (moveCount == MOVE_COUNT_INITIAL_VALUE) {
             OutputView.printTurnResultNotice();
         }
         OutputView.printTurnResult(cars);

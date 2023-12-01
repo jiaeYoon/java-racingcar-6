@@ -4,13 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Car {
+    private static final int START_DISTANCE = 0;
 
     private final String name;
     private int distance;
 
     public Car(String name) {
         this.name = name;
-        this.distance = 0;
+        this.distance = START_DISTANCE;
     }
 
     public static List<Car> createCars(List<String> carsName) {

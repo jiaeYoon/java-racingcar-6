@@ -7,8 +7,10 @@ import java.util.List;
 
 public class Result {
 
+    private final static String DASH = "-";
+
     public static String getProgress(Car car) {
-        return "-".repeat(car.getDistance());
+        return DASH.repeat(car.getDistance());
     }
 
     public static List<String> getWinner(List<Car> cars) {
